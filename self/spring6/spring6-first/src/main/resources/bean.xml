@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="studentOne" class="com.yangRR.sprint6.Student"></bean>
+    <bean id="studentTwo" class="com.yangRR.sprint6.Student"></bean>
+    <bean id="studentThree" class="com.yangRR.sprint6.Student"></bean>
+
+
+    <bean id="user" class="com.yangRR.sprint6.User">
+        <property name="hobbies">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+
+        <property name="list">
+            <list>
+                <ref bean="studentOne"></ref>  <!--因为集合里是对象所哟用ref-->
+                <!--集合里要是字符串 用value标签-->
+                <ref bean="studentTwo"></ref>
+                <ref bean="studentThree"></ref>
+            </list>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry>
+                    <key>
+                        <value>10010</value>
+                    </key>
+                    <ref bean="studentOne"></ref>
+                </entry>
+                <entry>
+                    <key>
+                        <value>10086</value>
+                    </key>
+                    <ref bean="studentTwo"></ref>
+                </entry>
+            </map>
+        </property>
+
+
+
+
+
+    </bean>
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sprint6_testIoc" />
+        <module name="yangRR-spring6" />
+        <module name="spring6-junit" />
+        <module name="spring6-jdbc" />
+        <module name="spring6-first" />
+        <module name="spring6-testAOP" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
